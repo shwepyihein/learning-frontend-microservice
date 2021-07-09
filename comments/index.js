@@ -10,6 +10,8 @@ app.get("/posts/:id/comments", (req, res) => {
   const comments = commentsByPostId[req.params.id] || []
   res.send(comments)
 })
+
+//asd
 // as
 app.post("/posts/:id/comments", (req, res) => {
   const commentId = randomBytes(4).toString("hex")
